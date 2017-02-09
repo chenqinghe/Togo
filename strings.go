@@ -1,4 +1,4 @@
-package pfunc
+package gophp
 
 import (
 	"fmt"
