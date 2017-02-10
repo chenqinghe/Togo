@@ -7,14 +7,9 @@
 * explode — 使用一个字符串分割另一个字符串
 * hex2bin — 转换十六进制字符串为二进制字符串
 * htmlspecialchars_decode — 将特殊的 HTML 实体转换回普通字符
-* htmlspecialchars — Convert special characters to HTML entities 
+* htmlspecialchars — 将特殊字符转换为HTML实体
 * ltrim — 删除字符串开头的空白字符（或其他字符）
-* md5_file — 计算指定文件的 MD5 散列值
-* md5 — 计算字符串的 MD5 散列值
-* ord — 返回字符的 ASCII 码值
 * rtrim — 删除字符串末端的空白字符（或者其他字符）
-* sha1_file — 计算文件的 sha1 散列值 
-* sha1 — 计算字符串的 sha1 散列值 
 * str_repeat — 重复一个字符串 
 * str_replace — 子字符串替换 
 * str_split — 将字符串转换为数组 
@@ -32,7 +27,11 @@
 * ....
 
 ### 加密相关操作
-* md5
+* md5_file — 计算指定文件的 MD5 散列值
+* md5 — 计算字符串的 MD5 散列值
+* sha1_file — 计算文件的 sha1 散列值 
+* sha1 — 计算字符串的 sha1 散列值 
+* ord — 返回字符的 ASCII 码值
 * ....
 
 ### 时间日期相关
