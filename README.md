@@ -1,4 +1,4 @@
-# phpfunc
+# GoPHP
 
 一些使用Go语言实现的php函数，让php程序猿能够无缝切换到Go，方便学习。
 
