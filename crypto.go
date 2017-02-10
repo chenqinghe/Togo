@@ -2,7 +2,7 @@ package gophp
 
 import (
 	"crypto/md5"
-	"fmt"
+	"encoding/hex"
 )
 
 func Md5(s string) (string, error) {
@@ -11,5 +11,5 @@ func Md5(s string) (string, error) {
 		return "", err
 	}
 	result := h.Sum(nil)
-	return string(result), nil
+	return hex.EncodeToString(result), nil
 }
