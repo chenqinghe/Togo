@@ -7,12 +7,12 @@
 > go get github.com/chenqinghe/GoPHP
 
 # 简单示例
->package main
->import "fmt"
->import gp "github.com/chenqinghe/GoPHP"
->func main(){
+> package main
+> import "fmt"
+> import gp "github.com/chenqinghe/GoPHP"
+> func main(){
 >   fmt.Println(gp.Md5("helloworld"))
->}
+> }
 
 ## 实现函数列表
 ### 字符串处理
