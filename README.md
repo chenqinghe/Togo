@@ -7,13 +7,20 @@
 > go get github.com/chenqinghe/GoPHP
 
 # 简单示例
-> package main
-> import "fmt"
-> import gp "github.com/chenqinghe/GoPHP"
-> func main(){
->   fmt.Println(gp.Md5("helloworld"))
-> }
+```Go
 
+ package main
+ 
+ import "fmt"
+ import gp "github.com/chenqinghe/GoPHP"
+ 
+ func main(){
+ 
+   fmt.Println(gp.Md5("helloworld"))
+   
+ }
+ 
+``` 
 ## 实现函数列表
 ### 字符串处理
 * explode — 使用一个字符串分割另一个字符串
