@@ -2,6 +2,18 @@
 
 一些使用Go语言实现的php函数，让php程序猿能够无缝切换到Go，方便学习。
 
+# 安装
+ 只需一条简单的命令：
+> go get github.com/chenqinghe/GoPHP
+
+# 简单示例
+>package main
+>import "fmt"
+>import gp "github.com/chenqinghe/GoPHP"
+>func main(){
+>   fmt.Println(gp.Md5("helloworld"))
+>}
+
 ## 实现函数列表
 ### 字符串处理
 * explode — 使用一个字符串分割另一个字符串
