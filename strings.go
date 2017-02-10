@@ -1,3 +1,6 @@
+/*
+字符串操作相关函数
+*/
 package gophp
 
 import (
@@ -39,7 +42,7 @@ func Rtrim(s1, s2 string) string {
 	return strings.TrimRight(s1, s2)
 }
 
-func Reverse(s string) string {
+func Strrev(s string) string {
 	if s == "" {
 		return s
 	}
