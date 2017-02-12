@@ -6,6 +6,9 @@ package gophp
 import (
 	"fmt"
 	"strings"
+	"strconv"
+	"errors"
+	"bytes"
 )
 
 func Explode(str, sep string) ([]string, error) {
@@ -15,17 +18,22 @@ func Explode(str, sep string) ([]string, error) {
 	return strings.Split(str, sep), nil
 }
 
-func Hex2bin(s string) (string, error) {
-	return "", nil
-}
 
-func HtmlSpecialCharsDecode(s string) (string, error) {
-	return "", nil
+func HtmlSpecialCharsDecode(s string) (string) {
+	s = strings.Replace(s, "&lt;", "<", -1)
+	s = strings.Replace(s, "&gt;", ">", -1)
+	s = strings.Replace(s,"&amp;","&",-1)
+	s = strings.Replace(s,`&quot;`,`"`,-1)
+	s = strings.Replace(s,`&#039;`,`'`,-1)
+	return s
 }
 
 func HtmlSpecialChars(s string) string {
 	s = strings.Replace(s, "<", "&lt;", -1)
 	s = strings.Replace(s, ">", "&gt;", -1)
+	s = strings.Replace(s,"&","&amp;",-1)
+	s = strings.Replace(s,`"`,"&quot;",-1)
+	s = strings.Replace(s,`'`,"&#039;",-1)
 	return s
 
 }
@@ -59,4 +67,32 @@ func Strrev(s string) string {
 		i++
 	}
 	return string(re)
+}
+
+
+func Bin2hex(s string)(string,error){
+	i,err := strconv.ParseInt(s,2,0)
+	if err!=nil{
+		return "",err
+	}
+	return  strconv.FormatInt(i,16),nil
+}
+
+
+func Hex2bin(s string )(string,error){
+
+	i,err := strconv.ParseInt(s,16,0)
+	if err!=nil{
+		return "",err
+	}
+	return  strconv.FormatInt(i,2),nil
+}
+
+func  Chr(ascii int) (string,error) {
+	if ascii>127 || ascii<32{
+		return "",errors.New("invalid ascii code.")
+	}
+	var buf bytes.Buffer
+	buf.Write([]byte{byte(ascii)})
+	return buf.String(),nil
 }

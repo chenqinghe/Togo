@@ -15,5 +15,5 @@ func Time() int64 {
 }
 
 func Sleep(s int) {
-	time.Sleep(s * time.Second)
+	time.Sleep(time.Duration(s) * time.Second)
 }
