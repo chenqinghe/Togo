@@ -1,4 +1,4 @@
-package togo
+package Togo
 
 import (
 	"crypto/md5"

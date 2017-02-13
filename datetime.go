@@ -1,8 +1,7 @@
 /**
 此包內是关于时间和日期的相关函数
  */
-
-package togo
+package Togo
 
 import "time"
 
