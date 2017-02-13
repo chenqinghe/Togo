@@ -5,7 +5,6 @@ package Togo
 
 import (
 	"bytes"
-	"encoding/base64"
 	"errors"
 	"fmt"
 	"strconv"
@@ -103,14 +102,4 @@ func BaseConvert(num string, frombase, tobase int) (string, error) {
 	return strconv.FormatInt(i, tobase), nil
 }
 
-func Base64Decode(str string) (string, error) {
-	bt, err := base64.StdEncoding.DecodeString(str)
-	if err != nil {
-		return "", err
-	}
-	return string(bt), nil
-}
 
-func Base64Encode(str string) string {
-	return base64.StdEncoding.EncodeToString([]byte(str))
-}

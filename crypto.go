@@ -5,6 +5,7 @@ import (
 	"encoding/hex"
 	"io/ioutil"
 	"os"
+	"encoding/base64"
 )
 
 func Md5(s string) (string, error) {
@@ -30,4 +31,17 @@ func Md5File(filepath string) (string, error) {
 	h.Write(contentbyte)
 	return hex.EncodeToString(h.Sum(nil)), nil
 
+}
+
+
+func Base64Decode(str string) (string, error) {
+	bt, err := base64.StdEncoding.DecodeString(str)
+	if err != nil {
+		return "", err
+	}
+	return string(bt), nil
+}
+
+func Base64Encode(str string) string {
+	return base64.StdEncoding.EncodeToString([]byte(str))
 }
