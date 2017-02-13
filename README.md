@@ -7,7 +7,7 @@
 
 # 安装
  只需一条简单的命令：
-> go get github.com/chenqinghe/GoPHP
+> go get github.com/chenqinghe/Togo
 
 # 简单示例
 ```Go
@@ -15,11 +15,11 @@
  package main
  
  import "fmt"
- import gp "github.com/chenqinghe/GoPHP"
+ import tg "github.com/chenqinghe/Togo"
  
  func main(){
  
-   fmt.Println(gp.Md5("helloworld"))//fc5e038d38a57032085441e7fe7010b0
+   fmt.Println(tg.Md5("helloworld"))//fc5e038d38a57032085441e7fe7010b0
    
  }
  
