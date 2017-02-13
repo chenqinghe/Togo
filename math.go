@@ -1,4 +1,4 @@
-package gophp
+package togo
 
 import (
 	"math"

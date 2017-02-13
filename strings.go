@@ -1,7 +1,7 @@
 /*
 字符串操作相关函数
 */
-package gophp
+package togo
 
 import (
 	"fmt"

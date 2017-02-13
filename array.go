@@ -1,8 +1,7 @@
 /*
 此包内主要是php中数组相关的操作
  */
-
-package gophp
+package togo
 
 import ()
 
