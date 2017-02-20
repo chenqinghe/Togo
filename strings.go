@@ -7,7 +7,6 @@ import (
 	"bytes"
 	"errors"
 	"fmt"
-	"strconv"
 	"strings"
 )
 
@@ -68,23 +67,6 @@ func Strrev(s string) string {
 	return string(re)
 }
 
-func Bin2hex(s string) (string, error) {
-	i, err := strconv.ParseInt(s, 2, 0)
-	if err != nil {
-		return "", err
-	}
-	return strconv.FormatInt(i, 16), nil
-}
-
-func Hex2bin(s string) (string, error) {
-
-	i, err := strconv.ParseInt(s, 16, 0)
-	if err != nil {
-		return "", err
-	}
-	return strconv.FormatInt(i, 2), nil
-}
-
 func Chr(ascii int) (string, error) {
 	if ascii > 127 || ascii < 32 {
 		return "", errors.New("invalid ascii code.")
@@ -94,12 +76,6 @@ func Chr(ascii int) (string, error) {
 	return buf.String(), nil
 }
 
-func BaseConvert(num string, frombase, tobase int) (string, error) {
-	i, err := strconv.ParseInt(num, frombase, 0)
-	if err != nil {
-		return "", err
-	}
-	return strconv.FormatInt(i, tobase), nil
-}
+
 
 
