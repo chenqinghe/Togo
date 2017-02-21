@@ -61,3 +61,12 @@
 * time
 * sleep
 * .....
+
+
+### 数据类型转换
+* bin2hex
+* hex2bin
+* boolval
+* intval
+* strval
+* ...
