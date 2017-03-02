@@ -13,7 +13,7 @@ func Sleep(s int) {
 	time.Sleep(time.Duration(s) * time.Second)
 }
 
-func CheckDate(month, day, year int) bool {
+func Checkdate(month, day, year int) bool {
 	//check month
 	if month > 12 || month < 1 {
 		return false

@@ -34,7 +34,7 @@ func Atanh(val complex128) complex128 {
 	return cmplx.Atanh(val)
 }
 
-func BaseConvert(num string, frombase, tobase int) (string, error) {
+func Base_convert(num string, frombase, tobase int) (string, error) {
 	i, err := strconv.ParseInt(num, frombase, 0)
 	if err != nil {
 		return "", err

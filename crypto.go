@@ -17,7 +17,7 @@ func Md5(s string) (string, error) {
 	return hex.EncodeToString(result), nil
 }
 
-func Md5File(filepath string) (string, error) {
+func Md5_file(filepath string) (string, error) {
 	f, err := os.Open(filepath)
 	if err != nil {
 		return "", err
@@ -34,7 +34,7 @@ func Md5File(filepath string) (string, error) {
 }
 
 
-func Base64Decode(str string) (string, error) {
+func Base64_decode(str string) (string, error) {
 	bt, err := base64.StdEncoding.DecodeString(str)
 	if err != nil {
 		return "", err
@@ -42,6 +42,6 @@ func Base64Decode(str string) (string, error) {
 	return string(bt), nil
 }
 
-func Base64Encode(str string) string {
+func Base64_encode(str string) string {
 	return base64.StdEncoding.EncodeToString([]byte(str))
 }
