@@ -16,7 +16,7 @@ func Chdir(dir string) error {
 	return os.Chdir(dir)
 }
 
-func Chgrp(filename string,group interface{})error{
+func Chgrp(filename string, group interface{}) error {
 	//todo
 	//uid := os.Geteuid()
 	//switch group.(type) {
@@ -29,18 +29,19 @@ func Chgrp(filename string,group interface{})error{
 	//
 	//}
 	//os.Chown()
+	return nil
 }
 
 func Chmod(filename string, mode int) error {
 	return os.Chmod(filename, os.FileMode(mode))
 }
 
-func Chroot(dir string)error{
+func Chroot(dir string) error {
 	//todo
 	return nil
 }
 
-func Chown(filename string,user interface{})error{
+func Chown(filename string, user interface{}) error {
 	//todo
 	//switch user.(type) {
 	//case string:

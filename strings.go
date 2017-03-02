@@ -81,8 +81,8 @@ func Chr(ascii int) (string, error) {
  *例如将 base64_encode() 的输出转换成符合 RFC 2045 语义的字符串。
  *它会在每 chunklen 个字符后边插入 end。(按byte计数，不是rune！)
  */
-func Chunk_split(body string, chunklen int64, end string) (str string, err error) {
-	count := math.Ceil(len(body) / chunklen)
+func Chunk_split(body string, chunklen int, end string) (str string, err error) {
+	count := int(math.Ceil(float64(len(body) / chunklen)))
 	var buf bytes.Buffer
 	for i := 0; i < count-1; i++ { //防止访问越界
 		start := i * chunklen
