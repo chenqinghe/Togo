@@ -26,7 +26,7 @@
 ``` 
 ## 实现函数列表
 ### 字符串处理
-* [explode]() — 使用一个字符串分割另一个字符串
+* [explode](https://github.com/chenqinghe/Togo/blob/master/strings.go#L14) — 使用一个字符串分割另一个字符串
 * hex2bin — 转换十六进制字符串为二进制字符串
 * htmlspecialchars_decode — 将特殊的 HTML 实体转换回普通字符
 * htmlspecialchars — 将特殊字符转换为HTML实体
