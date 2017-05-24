@@ -35,7 +35,7 @@ func Checkdate(month, day, year int) bool {
 			if day > 29 {
 				return false
 			}
-		}else {
+		} else {
 			if day > 28 {
 				return false
 			}
@@ -62,13 +62,7 @@ func checkIfLeapYear(year int) bool {
 	return false
 }
 
-func Date(str string ,timestamp int64)(string,error){
+func Date(str string, timestamp int64) (string, error) {
 
-	return "",nil
+	return "", nil
 }
-
-
-
-
-
-

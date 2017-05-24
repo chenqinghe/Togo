@@ -67,6 +67,6 @@ func Bindec(bin string) (int64, error) {
 	return i, err
 }
 
-func Ceil(f float64)float64{
+func Ceil(f float64) float64 {
 	return math.Ceil(f)
 }
