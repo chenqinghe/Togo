@@ -26,7 +26,7 @@
 ``` 
 ## 实现函数列表
 ### 字符串处理
-* explode — 使用一个字符串分割另一个字符串
+* [explode](https://github.com/chenqinghe/Togo/blob/master/strings.go#L14) — 使用一个字符串分割另一个字符串
 * hex2bin — 转换十六进制字符串为二进制字符串
 * htmlspecialchars_decode — 将特殊的 HTML 实体转换回普通字符
 * htmlspecialchars — 将特殊字符转换为HTML实体
@@ -42,11 +42,9 @@
 * trim — 去除字符串首尾处的空白字符（或者其他字符） 
 * ucfirst — 将字符串的首字母转换为大写 
 * lcfirst — 使一个字符串的第一个字符小写
-* .....
 
 ### 数组操作
 * array_diff- 
-* ....
 
 ### 加密相关操作
 * md5_file — 计算指定文件的 MD5 散列值
@@ -54,13 +52,11 @@
 * sha1_file — 计算文件的 sha1 散列值 
 * sha1 — 计算字符串的 sha1 散列值 
 * ord — 返回字符的 ASCII 码值
-* ....
 
 ### 时间日期相关
 * date
 * time
 * sleep
-* .....
 
 
 ### 数据类型转换
@@ -69,4 +65,3 @@
 * boolval
 * intval
 * strval
-* ...
