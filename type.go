@@ -50,7 +50,7 @@ func Boolval(val interface{}) bool {
 			return true
 		}
 	default:
-		return v == nil
+		return v==nil
 	}
 	return false
 }
