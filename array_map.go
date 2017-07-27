@@ -19,7 +19,7 @@ const (
 计算数组的差集
 在第一个ArrayMap中但不在剩余ArrayMap中的元素
 */
-func Arraydiff(m ...ArrayMap) ArrayMap {
+func Array_diff(m ...ArrayMap) ArrayMap {
 	//todo
 	return ArrayMap{}
 }
